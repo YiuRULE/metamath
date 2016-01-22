@@ -198,16 +198,3 @@ namespace metamath {
     enum { result = __fdim<A, B, metamath::is_lower<A, B>::result >::result };
   };
 };
-
-
-
-int main() {
-
-  std::cout << metamath::min<0, 5>::result << std::endl;
-  std::cout << metamath::abs<-4>::result << std::endl;
-  std::cout << metamath::pow<-5,5>::result << std::endl;
-  std::cout << metamath::sqrt<144>::result << std::endl;
-  //  std::cout << pow2<5>::result << std::endl;
-  //std::cout << factorial<5>::result << std::endl;
-  //std::cout << pow<5, 2>::result << std::endl;
-}
